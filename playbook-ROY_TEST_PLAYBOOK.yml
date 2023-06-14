@@ -82,7 +82,7 @@ tasks:
     isoversize: false
     nexttasks:
       '#none#':
-      - "3"
+      - "4"
     note: false
     quietmode: 0
     separatecontext: false
@@ -127,8 +127,43 @@ tasks:
     view: |-
       {
         "position": {
-          "x": 450,
-          "y": 720
+          "x": 480,
+          "y": 810
+        }
+      }
+  "4":
+    continueonerrortype: ""
+    id: "4"
+    ignoreworker: false
+    isautoswitchedtoquietmode: false
+    isoversize: false
+    nexttasks:
+      '#none#':
+      - "3"
+    note: false
+    quietmode: 0
+    scriptarguments:
+      value:
+        simple: TASK3
+    separatecontext: false
+    skipunavailable: false
+    task:
+      brand: ""
+      description: Prints text to war room (Markdown supported)
+      id: 80b22ecf-daaa-4c08-87dc-507890394b36
+      iscommand: false
+      name: TASK3
+      script: Print
+      type: regular
+      version: -1
+    taskid: 80b22ecf-daaa-4c08-87dc-507890394b36
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 500,
+          "y": 650
         }
       }
 version: -1
@@ -137,8 +172,8 @@ view: |-
     "linkLabelsPosition": {},
     "paper": {
       "dimensions": {
-        "height": 735,
-        "width": 380,
+        "height": 825,
+        "width": 430,
         "x": 450,
         "y": 50
       }
